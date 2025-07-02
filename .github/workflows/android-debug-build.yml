@@ -1,4 +1,3 @@
-
 name: Android Debug Build
 
 on:
@@ -25,6 +24,8 @@ jobs:
       
     - name: Build with Gradle
       run: ./gradlew assembleDebug
+      env:
+        OVERRIDE_VERSION_NAME: "1.0.0.${{ github.run_number }}"
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
