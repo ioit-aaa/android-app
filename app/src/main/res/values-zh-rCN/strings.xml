@@ -1,0 +1,1555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (c) 2017 Proton AG
+
+ This file is part of ProtonVPN.
+
+ ProtonVPN is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ ProtonVPN is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with ProtonVPN.  If not, see <https://www.gnu.org/licenses/>.
+-->
+<resources>
+    <string name="app_name" translatable="false">Proton VPN</string>
+    <string name="app_icon_name_classic">经典</string>
+    <string name="app_icon_name_dark">深色</string>
+    <string name="app_icon_name_retro">复古</string>
+    <string name="app_icon_name_weather">天气</string>
+    <string name="app_icon_name_notes">笔记</string>
+    <string name="app_icon_name_calculator">计算器</string>
+    <!-- Strings related to login -->
+    <string name="login">登录</string>
+    <string name="menuActionSignOut">退出登录</string>
+    <string name="connectionAllocationHelpTitle">感谢升级</string>
+    <string name="connectionAllocationHelpDescription1">要开始您的 Proton VPN 之旅，请为您的帐户或任何其他子帐户分配 VPN 连接。</string>
+    <string name="connectionAllocationHelpDescription2">此步骤只需几分钟。之后，您将能够登录并保护您的所有设备。</string>
+    <string name="connectionAllocationHelpDescription1AskAdmin">此帐户当前没有启用 VPN 连接。要开始您的 Proton VPN 之旅，请联系您的管理员。</string>
+    <string name="connectionAllocationHelpAssignConnectionsButton">启用 VPN 连接</string>
+    <string name="connectionAllocationHelpLoginAgainButton">再次登录</string>
+    <!-- tag(Redesign_2023) "OK" button on dialogs -->
+    <string name="ok">确定</string>
+    <string name="dialogLearnMore">了解更多</string>
+    <string name="connected">已连接</string>
+    <string name="buttonConnect">连接</string>
+    <string name="loaderConnectingTo">正在连接到 %1$s</string>
+    <string name="loaderNotConnected">未连接 (未受保护)</string>
+    <string name="loaderConnectedTo">已连接到 %1$s</string>
+    <string name="loaderDisconnecting">正在断开连接</string>
+    <string name="loaderReconnecting">正在重新连接</string>
+    <string name="loaderReconnectNoNetwork">正在等待可用的网络</string>
+    <string name="loaderCheckingAvailability">正在检查服务器可用性</string>
+    <string name="quickConnect">快速连接</string>
+    <!-- Displays a percentage value. Please use %% sign for %.
+         Example value: "70%" -->
+    <string name="serverLoad">%1$s%%</string>
+    <string name="cancel">取消</string>
+    <string name="close">关闭</string>
+    <string name="drawerReportProblem">报告问题</string>
+    <string name="drawerSignOut">@string/menuActionSignOut</string>
+    <string name="action_share">分享</string>
+    <string name="accountFree">Proton 免费版</string>
+    <string name="restrictedMaintenanceTitle">维护中</string>
+    <string name="restrictedMaintenanceDescription">您当前尝试连接的服务器正在维护中。请尝试其他服务器。</string>
+    <string name="errorUserDelinquent"><![CDATA[您的帐户当前有逾期发票。请在&#160;<a href="https://account.protonvpn.com">account.protonvpn.com</a>&#160;支付所有未付发票]]></string>
+    <string name="errorMaxSessions">您已达到帐户允许的最大同时连接数。请升级您的 Proton VPN 套餐以获得更多连接。</string>
+    <string name="listItemMaintenance">维护中</string>
+    <string name="insufficientPermissionsTitle">需要用户操作</string>
+    <string name="insufficientPermissionsDetails">无法自动建立 VPN 连接。请手动连接一次以授予权限。</string>
+    <string name="log_title">日志</string>
+    <string name="disconnect">断开连接</string>
+    <string name="state_connecting">正在连接…</string>
+    <string name="state_connected">已连接</string>
+    <string name="state_disconnecting">正在断开连接…</string>
+    <string name="state_error">错误</string>
+    <string name="error_server_list_load_failed">请检查您的连接并重试。</string>
+    <string name="error_server_unreachable">无法连接到 VPN。请检查您的连接并重试。</string>
+    <string name="error_peer_auth_failed">@string/error_server_unreachable</string>
+    <string name="error_auth_failed">用户身份验证失败。</string>
+    <string name="error_generic">连接时发生未指定的故障。</string>
+    <string name="error_generic_with_reason">Proton VPN 无法建立 VPN 连接。请在几秒钟后重试。<br/><br/> 详细信息：%1$s</string>
+    <string name="reconnect">重新连接</string>
+    <string name="reconnect_now">立即重新连接</string>
+    <string name="try_reconnecting">尝试重新连接</string>
+    <string name="connect">连接</string>
+    <string name="upgrade">升级</string>
+    <string name="retry">重试</string>
+    <string name="report_message">报告消息</string>
+    <string name="report_bug_email_label">您的电子邮件</string>
+    <string name="report_bug_email_hint">输入您的电子邮件地址</string>
+    <string name="report_bug_message_label">消息</string>
+    <string name="report_bug_message_hint">请描述该错误以及您是如何以及在何处发现它的</string>
+    <string name="send_report">发送报告</string>
+    <string name="discardChanges">放弃未保存的更改？</string>
+    <string name="discard">放弃</string>
+    <string name="done">完成</string>
+    <string name="add">添加</string>
+    <string name="copy_to_clipboard">复制</string>
+    <string name="copied_to_clipboard">已复制到剪贴板</string>
+    <string name="got_it">知道了</string>
+    <string name="something_went_wrong">出错了</string>
+    <string name="try_again">重试</string>
+    <string name="delete">删除</string>
+    <string name="remove">移除</string>
+    <string name="saveButton">保存</string>
+    <string name="ipWithPlaceholder">IP：%1$s</string>
+    <string name="activityLicensesTitle">第三方许可证</string>
+    <string name="stateFragmentUnknownIp">未知</string>
+    <string name="noVpnPermissionMainTitle">需要操作才能连接到 VPN</string>
+    <string name="noVpnPermissionMainMessage">要连接到 Proton VPN，请执行以下操作：</string>
+    <string name="noVpnPermissionGrantPermissionTitle">授予 VPN 权限</string>
+    <string name="noVpnPermissionGrantPemrissionMessage">Android 需要您的权限才能连接到 Proton VPN。当您收到来自 Android 的“连接请求”窗口时，点击“确定”授予权限。</string>
+    <string name="noVpnPermissionDisableAlwaysOnTitle">为其他 VPN 应用禁用始终在线</string>
+    <string name="noVpnPermissionDisableAlwaysOnMessage">Android 不支持多个 VPN 应用。为除 Proton VPN 之外的任何 VPN 应用禁用始终在线。</string>
+    <string name="noVpnPermissionProtonAppLabel">Proton VPN 应用</string>
+    <string name="noVpnPermissionOtherAppLabel">其他 VPN 应用</string>
+    <string name="noVpnPermissionOpenSettings">打开 Android VPN 设置</string>
+    <string name="noNotificationPermissionGrantTitle">不要措手不及…</string>
+    <string name="noNotificationPermissionGrantDescription">启用通知以获取有关连接状态更改的警报。</string>
+    <string name="noNotificationPermissionGrantNowTitle">启用通知</string>
+    <string name="error_prepare_vpn_description"><![CDATA[请在 Android VPN 系统设置中为所有其他 VPN 应用禁用始终在线 VPN，因为这会阻止 Proton VPN 建立 VPN 连接。如果出现请求 VPN 权限的对话框，也请授予 VPN 权限。其他 VPN 应用也可能需要卸载以防止冲突。之后，请重试。<a href="%1$s">了解更多</a>]]></string>
+    <string name="error_prepare_vpn_settings">转到 Android VPN 设置</string>
+    <string name="error_prepare_vpn_title">错误：VPN 权限问题</string>
+    <string name="error_server_not_set">服务器不再可用</string>
+    <string name="bugReportErrorEmptyEmail">电子邮件不能为空</string>
+    <string name="bugReportErrorInvalidEmail">无效的电子邮件地址</string>
+    <string name="bugReportLabelVpnLogsTitle">包括错误日志</string>
+    <string name="bugReportErrorLabelVpnLogsDescription">这将发送本地错误日志（我们不记录活动）以帮助我们解决您的问题</string>
+    <string name="profileFastest">最快</string>
+    <string name="profileRandom">随机</string>
+    <string name="loaderErrorNoInternet">无网络连接</string>
+    <string name="loaderErrorGeneric">出错了</string>
+    <string name="inputIpAddressLabel">IP 地址</string>
+    <string name="inputIpAddressHintIP" translatable="false">192.0.2.0</string>
+    <string name="inputIpAddressHelp">输入服务器的 IPv4 或 IPv6 地址</string>
+    <string name="inputIpAddressErrorInvalid">无效的 IP 地址</string>
+    <!-- Displayed as a badge next to setting item ("Widget [NEW]") -->
+    <string name="settings_new_label_badge">新</string>
+    <string name="settingsExcludedIPAddressesListHeader">排除的 IP 地址 (%1$d)</string>
+    <string name="settingsIncludedIPAddressesListHeader">包含的 IP 地址 (%1$d)</string>
+    <string name="settingsExcludedApps">排除的应用</string>
+    <string name="settingsExcludedAppsEmpty">添加要从 VPN 流量中排除的应用。</string>
+    <string name="settingsIncludedAppsEmpty">添加要包含在 VPN 流量中的应用。</string>
+    <string name="settingsExcludedAppsSelectedHeader">排除的应用 (%1$d)</string>
+    <string name="settingsIncludedAppsSelectedHeader">包含的应用 (%1$d)</string>
+    <string name="settingsSplitTunnelingAvailableRegularHeader">所有其他常规应用 (%1$d)</string>
+    <string name="settingsSplitTunnelingAvailableSystemHeader">所有其他系统应用 (%1$d)</string>
+    <string name="settingsSplitTunnelingAvailableHeader">所有其他应用 (%1$d)</string>
+    <string name="settingsExcludedAppsLoadSystemAppsButton">显示系统应用</string>
+    <string name="settingsSplitTunnelAppsShowSystemAppsCheckbox">显示系统应用</string>
+    <string name="settingsSplitTunnelingExcludedAppsList">这些应用已从您的 VPN 连接中排除。</string>
+    <string name="settingsSplitTunnelingIncludedAppsList">只有这些应用通过 VPN 连接。</string>
+    <!-- Description for action to add an application to "excluded apps" in split tunneling settings.
+         Only used by accessibility services.
+         Example:
+         an item for app "Internet Browser" will be ready by a screen reader as:
+         "Internet Browser, double tap to add to excluded apps"
+    -->
+    <string name="accessibility_action_add_excluded_app">添加到排除的应用</string>
+    <!-- Description for action to remove an application from "excluded apps" in split tunneling settings.
+         Only used by accessibility services.
+         Example:
+         an item for app "Internet Browser" will be ready by a screen reader as:
+         "Internet Browser, double tap to remove from excluded apps"
+    -->
+    <string name="accessibility_action_remove_excluded_app">从排除的应用中移除</string>
+    <!-- Description for action to add an application to "included apps" in split tunneling settings.
+         Only used by accessibility services.
+         Example:
+         an item for app "Internet Browser" will be ready by a screen reader as:
+         "Internet Browser, double tap to add to included apps"
+    -->
+    <string name="accessibility_action_add_included_app">添加到包含的应用</string>
+    <!-- Description for action to remove an application from "included apps" in split tunneling settings.
+         Only used by accessibility services.
+         Example:
+         an item for app "Internet Browser" will be ready by a screen reader as:
+         "Internet Browser, double tap to remove from included apps"
+    -->
+    <string name="accessibility_action_remove_included_app">从包含的应用中移除</string>
+    <string name="accessibility_action_copy_to_clipboard">复制到剪贴板</string>
+    <string name="accessibility_action_item_delete">删除</string>
+    <string name="accessibility_action_item_move_up">上移</string>
+    <string name="accessibility_action_item_move_down">下移</string>
+    <string name="tileConnected">已连接：%1$s</string>
+    <string name="openUrlError">无法打开 %1$s。您的设备上未检测到网络浏览器。</string>
+    <string name="loaderErrorTimeout">连接超时。请重试。</string>
+    <string name="troubleshootButton">故障排除</string>
+    <string name="activityTroubleshootTitle">故障排除</string>
+    <string name="troubleshootPotentialSolutionsSectionTitle">潜在解决方案</string>
+    <string name="troubleshootNoInternetDescription">请确保您的网络连接正常。</string>
+    <string name="troubleshootNoInternetTitle">无网络连接</string>
+    <string name="troubleshootIspProblemTitle">互联网服务提供商 (ISP) 问题</string>
+    <string name="troubleshootIspProblemDescription"><![CDATA[尝试从其他网络连接到 Proton（或使用 <a href='%1$s'>Tor</a>）]]></string>
+    <string name="troubleshootAntivirusProblemTitle">防病毒软件干扰</string>
+    <string name="troubleshootAntivirusProblemDescription">暂时禁用或移除您的防病毒软件。</string>
+    <string name="troubleshootProxyFirewallProblemTitle">代理/防火墙干扰</string>
+    <string name="troubleshootProxyFirewallProblemDescription">禁用任何代理或防火墙，或联系您的网络管理员。</string>
+    <string name="troubleshootProtonDownTitle">Proton 已关闭</string>
+    <string name="troubleshootProtonDownDescription"><![CDATA[查看 <a href=\"%1$s\">Proton 状态</a>了解我们的系统状态。]]></string>
+    <string name="troubleshootContactUsSectionTitle">仍需帮助？直接联系我们</string>
+    <string name="troubleshootCustomerSupport">客户支持</string>
+    <string name="settingsAllowAlternativeRoutingTitle">备用路由</string>
+    <string name="settingsAllowAlternativeRoutingDescription"><![CDATA[如果 Proton 被阻止，允许应用尝试备用路径以访问 Proton 服务器。<a href="%1$s">了解更多</a>。]]></string>
+    <string name="troubleshootGovernmentBlockTitle">政府封锁</string>
+    <string name="troubleshootGovernmentBlockDescription"><![CDATA[您所在的国家/地区可能正在阻止访问 Proton。尝试使用 <a href='%1$s'>Tor</a> 访问 Proton。]]></string>
+    <string name="settingsKillSwitchEnableTitle">如何启用终止开关</string>
+    <string name="settingsKillSwitchEnableStep1">1. 打开您的设备设置</string>
+    <!-- %1$s here will be replaced by "gear" icon -->
+    <string name="settingsKillSwitchEnableStep2">2. 找到 Proton VPN 并点击 %1$s</string>
+    <!-- Content description for the "gear" icon in settingsKillSwitchEnableStep2. Used only by accessibility services. -->
+    <string name="settingsKillSwitchEnableStep2_gearIconContentDescription">设置</string>
+    <!-- The phrases "Always-on VPN" and "Block connections without VPN" needs to be translated exactly
+         the same as in Android VPN settings. -->
+    <string name="settingsKillSwitchEnableStep3"><![CDATA[3. 启用“<b>始终在线 VPN</b>”和“<b>阻止没有 VPN 的连接</b>”]]></string>
+    <string name="settingsKillSwitchAndroidSettingsButton">设置</string>
+    <string name="settingsKillSwitchLearnMoreButton">什么是终止开关？</string>
+    <string name="settingsKillSwitchWarningMain">当终止开关打开时，您将无法连接到：</string>
+    <string name="settingsKillSwitchWarningPoint1">通过分割隧道从您的 VPN 连接中排除的网站和应用</string>
+    <string name="settingsKillSwitchWarningPoint2">您的局域网 (LAN) 上的设备</string>
+    <string name="settingsProtocolNameSmart" translatable="false">智能 (自动)</string>
+    <string name="settingsProtocolNameWireguard" translatable="false">WireGuard</string>
+    <string name="settingsProtocolNameWireguardTCP" translatable="false">WireGuard TCP</string>
+    <string name="settingsProtocolNameWireguardTLS" translatable="false">Stealth</string>
+    <string name="settingsProtocolNameOpenVpnTcp" translatable="false">OpenVPN TCP</string>
+    <string name="settingsProtocolNameOpenVpnUdp" translatable="false">OpenVPN UDP</string>
+    <string name="settingsEnableTelemetryTitle">分享匿名使用统计信息</string>
+    <string name="settingsEnableTelemetryDescription">使用数据可帮助我们克服 VPN 封锁并提高应用性能。</string>
+    <string name="settingsSendCrashReportsTitle">分享匿名崩溃报告</string>
+    <string name="settingsSendCrashReportsDescription">崩溃报告可帮助我们修复错误、检测防火墙并避免 VPN 封锁。</string>
+    <string name="settingsTelemetryScreenTitle">使用统计信息</string>
+    <string name="settingsTelemetryScreenInfo"><![CDATA[这些统计信息不包含您的 IP 地址，也不能用于识别您的身份。我们绝不会与第三方分享这些信息。<a href="%1$s">了解更多</a>]]></string>
+    <string name="netshield_settings_description_not_html">保护您免受网站和应用上的广告、恶意软件和跟踪器的侵害。%1$s</string>
+    <string name="settings_icon_change_description">使用一个不显眼的图标来伪装 Proton VPN 应用。通知仍将显示默认的 Proton VPN 名称和图标。%1$s</string>
+    <string name="settings_icon_change_learn_more">了解更多</string>
+    <string name="learn_more">了解更多</string>
+    <string name="netshield_feature_name" translatable="false">NetShield</string>
+    <string name="netshield_state_on" comment="Describes state, not action">开启</string>
+    <string name="netshield_state_off" comment="Describes state, not action">关闭</string>
+    <string name="netshield_state_unavailable" comment="Describes state, not action">不可用</string>
+    <string name="split_tunneling_state_on" comment="Describes state, not action">开启</string>
+    <string name="split_tunneling_state_off" comment="Describes state, not action">关闭</string>
+    <string name="vpn_accelerator_state_on" comment="Describes state, not action">开启</string>
+    <string name="vpn_accelerator_state_off" comment="Describes state, not action">关闭</string>
+    <string name="lan_state_on" comment="Describes state, not action">开启</string>
+    <string name="lan_state_off" comment="Describes state, not action">关闭</string>
+    <string name="alt_routing_state_on" comment="Describes state, not action">开启</string>
+    <string name="alt_routing_state_off" comment="Describes state, not action">关闭</string>
+    <string name="custom_dns_state_on" comment="Describes state, not action">开启</string>
+    <string name="custom_dns_state_off" comment="Describes state, not action">关闭</string>
+    <string name="custom_dns_state_unavailable" comment="Describes state, not action">不可用</string>
+    <string name="custom_dns_item_removed_snackbar">项目已移除</string>
+    <string name="netshield_free_title" translatable="false">NetShield</string>
+    <string name="netshield_free_description">阻止网站和应用上的广告、跟踪器和恶意软件</string>
+    <string name="netshield_what_data_means">NetShield 统计信息说明</string>
+    <string name="netshield_ads_title">广告</string>
+    <string name="netshield_ads_details">广告和不可见的广告跟踪器</string>
+    <string name="netshield_trackers_title">跟踪器</string>
+    <string name="netshield_trackers_details">存储和分享有关您互联网活动信息的 Cookie 和其他跟踪器</string>
+    <string name="netshield_data_title">数据</string>
+    <string name="netshield_data_details">NetShield 阻止的来自广告、跟踪器和恶意软件的不需要的数据量</string>
+    <plurals name="netshield_ads_blocked" comment="Number of ads blocked by netshield. Number displayed above the text">
+        <item quantity="one">已阻止广告</item>
+        <item quantity="other">已阻止广告</item>
+    </plurals>
+    <plurals name="netshield_trackers_stopped" comment="Number of trackers stopped by netshield. Number displayed above the text">
+        <item quantity="one">已停止跟踪器</item>
+        <item quantity="other">已停止跟踪器</item>
+    </plurals>
+    <string name="netshield_data_saved" comment="Total data saved by netshield shown in kb/mb">已节省数据</string>
+    <string name="netshield_setting_warning">当广告和跟踪器被阻止时，某些网站可能无法正常加载。</string>
+    <string name="dialogDontShowAgain">不再显示</string>
+    <string name="guestHoleNotificationContent">正在尝试规避网络问题。这将帮助您访问 Proton VPN。</string>
+    <string name="errorTunMultiUserPermission">由于双应用（例如双开信使）和分割隧道之间的冲突，无法初始化 VPN 连接。请禁用其中一个并重新启动您的设备。</string>
+    <string name="errorTorrentNotAllowed">此服务器不允许 P2P。</string>
+    <string name="error_profile_fallback_unavailable">连接失败。您为配置文件选择的服务器不可用。</string>
+    <string name="profileProtocolNotAvailable">此配置文件的 VPN 协议当前不可用。要连接，请尝试更改协议。</string>
+    <string name="stateConnectedTo">已连接到 %1$s</string>
+    <string name="stateNotConnected">您未连接</string>
+    <string name="nameEurope">欧洲</string>
+    <string name="nameAmerica">美洲</string>
+    <string name="nameAsia">亚洲</string>
+    <string name="nameAfricaAndMiddleEast">非洲和中东</string>
+    <string name="nameOceania">大洋洲</string>
+    <string name="tv_row_settings">设置</string>
+    <string name="tv_card_split_tunneling_label">分割隧道</string>
+    <string name="tv_card_protocol_label">协议</string>
+    <string name="tv_detail_default_connection_checkbox_short">收藏</string>
+    <string name="tv_detail_connect_streaming">使用 Plus 进行流媒体播放</string>
+    <string name="tv_detail_connect">连接</string>
+    <string name="tv_detail_description_streaming_country">流式传输您喜爱的内容。使用 Proton VPN Plus 套餐访问更多应用。</string>
+    <string name="tv_detail_description_no_streaming_country">使用 Proton VPN Plus 套餐流式传输更多您喜爱的内容。</string>
+    <string name="tv_detail_description_country_not_available">此国家/地区不可用。使用 Proton VPN Plus 套餐获取更多流媒体选项。</string>
+    <string name="tv_detail_description_plus">使用您的应用流式传输您喜爱的视频、电影或体育赛事。</string>
+    <string name="tv_login_title_signin">登录 Proton VPN</string>
+    <string name="tv_login_title_welcome">流式传输您喜爱的视频内容</string>
+    <string name="tv_login_welcome_description">观看来自 50 多个国家/地区的视频内容，包括 YouTube 和 Twitch。使用 Proton VPN Plus 流式传输 Netflix、Amazon Prime 和 Hulu。</string>
+    <string name="tv_login_welcome_description_bottom"><![CDATA[在 <b>%1$s</b> 获取您的 Proton VPN 帐户]]></string>
+    <string name="tv_login_welcome_button">登录</string>
+    <string name="tv_login_step1_description"><![CDATA[在您的移动设备或计算机上转到 <b>%1$s</b>]]></string>
+    <string name="tv_login_step2_description">登录 Proton VPN</string>
+    <string name="tv_login_step3_description">输入代码：</string>
+    <string name="tv_login_timer_label">此代码将在以下时间后过期：</string>
+    <string name="tv_login_refresh">刷新</string>
+    <string name="tv_login_title_loading">正在加载…</string>
+    <string name="tv_login_title_refresh">您的会话已过期。单击刷新以重新开始。</string>
+    <string name="tv_upgrade_title">开始使用 Plus 进行流媒体播放</string>
+    <string name="back">返回</string>
+    <string name="tv_upgrade_url_details"><![CDATA[立即访问 <b>%1$s</b> 升级到 Proton VPN Plus。]]></string>
+    <string name="tv_upgrade_description">获取 Proton VPN Plus 套餐以访问全球 500 多个服务器以及针对 Netflix、Amazon Prime Video、Disney+ 等的优化流媒体选项。</string>
+    <string name="tv_vpn_error_dialog_title">VPN 连接失败</string>
+    <string name="tv_signout_label">退出登录</string>
+    <string name="tv_signout_dialog_title">您确定要退出登录吗？</string>
+    <string name="tv_signout_dialog_description_connected">这会将您的电视与任何 VPN 服务器断开连接。</string>
+    <string name="tv_signout_dialog_ok">退出登录</string>
+    <string name="tv_quick_connect_recommened">推荐</string>
+    <string name="tv_quick_connect_favourite">收藏</string>
+    <string name="tv_country_maintenance_dialog_title">国家/地区不可用</string>
+    <string name="tv_country_maintenance_dialog_description">请稍后重试或选择其他国家/地区。</string>
+    <!-- The placeholder is replaced with a 0-100 value indicating the server load in percent.
+         Please note the double % sign after the placeholder. It is displayed as a single % sign in the app.
+
+         Example: 76% server load -->
+    <string name="tv_server_list_load">%1$s%% 服务器负载</string>
+    <string name="tv_recently_used_servers">最近使用的服务器 (%1$d)</string>
+    <string name="tv_available_servers">可用服务器 (%1$d)</string>
+    <string name="tv_locked_servers">锁定的服务器 (%1$d)</string>
+    <string name="tv_other_servers">其他服务器 (%1$d)</string>
+    <string name="tv_server_list">服务器列表</string>
+    <string name="tv_server_list_action_unavailable">不可用</string>
+    <string name="notification_subscription_expired_title">您的 Proton VPN 订阅计划已过期</string>
+    <string name="notification_subscription_expired_content">我们不得不降级您的计划，但我们正在将您重新连接到该计划上可用的最快服务器。</string>
+    <string name="notification_subscription_expired_no_reconnection_content">您的订阅已被降级。</string>
+    <string name="notification_delinquent_title">您的 Proton VPN 帐户有待处理的发票</string>
+    <string name="notification_delinquent_content">请花点时间更新您的账单信息以保持您的订阅有效。</string>
+    <string name="notification_max_sessions_title">您已达到最大设备限制</string>
+    <!-- The number of devices will always be greater than 1. -->
+    <plurals name="notification_max_sessions_upsell_content">
+        <item quantity="one">请断开另一台设备以连接此设备，或升级到 Plus 以同时连接多达 %1$d 台设备。</item>
+        <item quantity="other">请断开另一台设备以连接此设备，或升级到 Plus 以同时连接多达 %1$d 台设备。</item>
+    </plurals>
+    <string name="notification_max_sessions_content">请断开另一台设备以连接此设备。</string>
+    <string name="notification_cancel_to_free">您正在使用免费计划。免费服务器和功能可用。</string>
+    <string name="notification_cancel_to_basic">您正在使用基本计划。基本和免费服务器和功能可用。</string>
+    <string name="notification_cancel_to_delinquent">支付待处理发票后，您将能够再次访问高级功能。</string>
+    <string name="reconnect_from_server">从服务器：</string>
+    <string name="reconnect_to_server">到服务器：</string>
+    <string name="no_thanks">不用了，谢谢</string>
+    <string name="enable">启用</string>
+    <string name="notification_smart_protocol_disabled_title">智能协议当前已禁用</string>
+    <string name="notification_smart_protocol_disabled_content">Proton VPN 检测到您当前的网络正在阻止连接到 VPN。启用智能协议可能会绕过这些限制。</string>
+    <string name="upsell_advanced_features">高级功能：NetShield、安全核心、Tor、P2P</string>
+    <string name="upsell_streaming_services">在世界任何地方访问流媒体服务（Netflix、Disney+ 等）</string>
+    <!-- Number of servers available in the service.
+         This phrase will be combined with "upsell_many_countries" to form:<upsell_many_servers>, <upsell_many_countries>.
+         Neither "upsell_many_servers" nor "upsell_many_countries" includes the comma nor space!
+
+         Example: 1364 servers, 55 countries -->
+    <plurals name="upsell_many_servers">
+        <item quantity="one">%1$d 台服务器</item>
+        <item quantity="other">%1$d 台服务器</item>
+    </plurals>
+    <!-- Number of countries available in the service.
+         This phrase will be combined with "upsell_many_countries" to form:<upsell_many_servers>, <upsell_many_countries>.
+         Neither "upsell_many_servers" nor "upsell_many_countries" includes the comma nor space!
+
+         Example: 1364 servers, 55 countries -->
+    <plurals name="upsell_many_countries">
+        <item quantity="one">%1$d 个国家/地区</item>
+        <item quantity="other">%1$d 个国家/地区</item>
+    </plurals>
+    <string name="upsell_upgrade_again">再次升级以享受所有功能：</string>
+    <plurals name="upgrade_devices_title">
+        <item quantity="one">一次保护 %1$d 台设备</item>
+        <item quantity="other">一次保护 %1$d 台设备</item>
+    </plurals>
+    <string name="upgrade_devices_text">Proton VPN 可在 8 个不同平台上使用。</string>
+    <string name="upgrade_plus_title">升级您的隐私</string>
+    <string name="upgrade_plus_message">使用 VPN Plus 获得高级隐私功能和更高速度。</string>
+    <string name="upgrade_netshield_title">享受无广告浏览</string>
+    <string name="upgrade_netshield_message"><![CDATA[使用 <b>NetShield</b> 阻止广告、跟踪器和恶意软件。]]></string>
+    <string name="upgrade_secure_core_title">双重加密</string>
+    <string name="upgrade_secure_core_message"><![CDATA[使用 <b>安全核心</b> 为您的 VPN 连接添加另一层加密。]]></string>
+    <string name="upgrade_p2p_title">解锁点对点 (P2P) 下载和文件共享</string>
+    <string name="upgrade_p2p_text">在隐藏您的 IP 地址的同时提高您的上传和下载速度。</string>
+    <string name="upgrade_profiles_title">快速访问您常用的连接</string>
+    <string name="upgrade_profiles_text">使用 VPN Plus 解锁配置文件</string>
+    <string name="upgrade_streaming_title">以 4K 格式流式传输</string>
+    <string name="upgrade_streaming_text">在世界任何地方欣赏您喜爱的电影和电视节目。</string>
+    <string name="upgrade_tor_title">一键访问 Tor 网络</string>
+    <string name="upgrade_tor_text">使用您的常规浏览器连接到隐藏服务和洋葱网站。</string>
+    <string name="upgrade_vpn_accelerator_title">以更快的速度浏览</string>
+    <!--
+        %1$s - speed in Gbps
+        Example:
+        Unlock faster, less crowded servers with speeds of up to 10 Gbps.
+    -->
+    <string name="upgrade_vpn_accelerator_message">解锁速度高达 %1$d Gbps 的更快、更少拥挤的服务器。</string>
+    <string name="upgrade_split_tunneling_title">两全其美</string>
+    <string name="upgrade_split_tunneling_message"><![CDATA[使用<b>分割隧道</b>将您的流量分为 VPN 和非 VPN 隧道。]]></string>
+    <string name="upgrade_customization_title">解锁高级 VPN 自定义</string>
+    <string name="upgrade_lan_access_message"><![CDATA[使用 VPN Plus 访问您的<b>局域网 (LAN)</b> 上的设备。]]></string>
+    <string name="upgrade_customization_message"><![CDATA[使用 VPN Plus 解锁<b>局域网连接</b>、<b>自定义 DNS</b> 和 <b>NAT 类型 2</b>。]]></string>
+    <string name="upgrade_all_countries_title">访问所有国家/地区</string>
+    <!-- Number of servers inserted as %1$s in the "upgrade_plus_countries_title_new".
+         The number is rounded to the hundreds, e.g. for a value of 1234 the number used in this text is 1200.
+
+         Example:
+         1200 secure servers
+         -->
+    <plurals name="upgrade_plus_servers_new">
+        <item quantity="one">%d 台安全服务器</item>
+        <item quantity="other">%d 台安全服务器</item>
+    </plurals>
+    <!-- Number of countries inserted as %2$s in "upgrade_plus_countries_title_new".
+
+         Example:
+         55 countries
+         -->
+    <plurals name="upgrade_plus_countries">
+        <item quantity="one">%d 个国家/地区</item>
+        <item quantity="other">%d 个国家/地区</item>
+    </plurals>
+    <!-- Parameters:
+     %1$s - replaced with "upgrade_plus_servers_new"
+     %2$s - replaced with "upgrade_plus_countries"
+
+     Example:
+     Unlock 1300+ secure servers in 61 countries with VPN Plus.
+     -->
+    <string name="upgrade_plus_countries_title_new"><![CDATA[使用 <b>VPN Plus</b> 解锁 %2$s 的 %1$s。]]></string>
+    <string name="mail_app_name" translateable="false">Proton Mail</string>
+    <string name="calendar_app_name" translatable="false">Proton Calendar</string>
+    <string name="drive_app_name" translatable="false">Proton Drive</string>
+    <string name="pass_app_name" translatable="false">Proton Pass</string>
+    <string name="upgrade_unlimited_all_apps_title">所有高级 Proton 服务。一个简单的订阅。</string>
+    <string name="upgrade_unlimited_all_apps_description">使用 Proton Unlimited 获得完整的隐私保护。</string>
+    <string name="upgrade_unlimited_more">以及更多</string>
+    <string name="upgrade_unlimited_vpn_unlimited_countries">解锁所有国家/地区</string>
+    <string name="upgrade_unlimited_vpn_all_features">所有其他 VPN Plus 功能</string>
+    <string name="upgrade_unlimited_vpn_any_location">选择任何位置</string>
+    <string name="upgrade_unlimited_vpn_higher_speeds">更快的 VPN 速度</string>
+    <plurals name="upgrade_unlimited_vpn_many_devices">
+        <item quantity="one">一次保护 %1$d 台设备</item>
+        <item quantity="other">一次保护 %1$d 台设备</item>
+    </plurals>
+    <string name="upgrade_unlimited_vpn_streaming">安全流媒体</string>
+    <string name="upgrade_unlimited_vpn_adblocker">广告拦截器和恶意软件保护</string>
+    <string name="upgrade_unlimited_vpn_double_vpn">双重 VPN</string>
+    <string name="upgrade_unlimited_vpn_p2p">P2P 支持</string>
+    <plurals name="upgrade_unlimited_mail_custom_domains">
+        <item quantity="one">%1$d 个自定义电子邮件域</item>
+        <item quantity="other">%1$d 个自定义电子邮件域</item>
+    </plurals>
+    <plurals name="upgrade_unlimited_mail_attachments">
+        <item quantity="one">%1$d MB 附件</item>
+        <item quantity="other">%1$d MB 附件</item>
+    </plurals>
+    <plurals name="upgrade_unlimited_mail_many_addresses">
+        <item quantity="one">%1$d 个电子邮件地址</item>
+        <item quantity="other">%1$d 个电子邮件地址</item>
+    </plurals>
+    <string name="upgrade_unlimited_mail_unlimited_folders">无限文件夹和过滤器</string>
+    <string name="upgrade_unlimited_mail_dark_web">暗网监控</string>
+    <string name="upgrade_unlimited_mail_aliases">无限隐藏我的电子邮件别名</string>
+    <string name="upgrade_unlimited_mail_autoreply">自动回复</string>
+    <string name="upgrade_unlimited_mail_scheduled_send">定时发送</string>
+    <plurals name="upgrade_unlimited_calendar_calendars">
+        <item quantity="one">%1$d 个个人日历</item>
+        <item quantity="other">%1$d 个个人日历</item>
+    </plurals>
+    <string name="upgrade_unlimited_calendar_sharing">日历共享</string>
+    <string name="upgrade_unlimited_calendar_invites">发送和接收邀请</string>
+    <string name="upgrade_unlimited_drive_encryption">加密文件存储</string>
+    <string name="upgrade_unlimited_drive_storage_size">%1$d GB 照片、文件和邮件总存储空间</string>
+    <string name="upgrade_unlimited_drive_link_share">通过链接共享照片和文件</string>
+    <string name="upgrade_unlimited_drive_sharing_security">高级共享安全</string>
+    <string name="upgrade_unlimited_drive_version_history">版本历史</string>
+    <string name="upgrade_unlimited_pass_manager">加密密码管理器</string>
+    <string name="upgrade_unlimited_pass_logins_aliases">无限登录和隐藏我的电子邮件别名</string>
+    <plurals name="upgrade_unlimited_pass_vaults">
+        <item quantity="one">%1$d 个保险库</item>
+        <item quantity="other">%1$d 个保险库</item>
+    </plurals>
+    <string name="upgrade_unlimited_pass_logins">无限登录</string>
+    <string name="upgrade_unlimited_pass_aliases">无限隐藏我的电子邮件别名</string>
+    <string name="upgrade_unlimited_pass_credit_cards">无限信用卡</string>
+    <string name="upgrade_unlimited_pass_devices">无限设备</string>
+    <plurals name="upgrade_unlimited_pass_users">
+        <item quantity="one">与最多 %1$d 个其他人共享</item>
+        <item quantity="other">与最多 %1$d 个其他人共享</item>
+    </plurals>
+    <string name="upgrade_unlimited_pass_2fa_auth">集成的 2FA 身份验证器</string>
+    <string name="upgrade_not_now_button">以后再说</string>
+    <!-- Content description for plan selection list.
+         Only used by accessibility services.
+
+         Example:
+         When the plan selection control is focused, and the first plan name is "VPN Plus"
+         TalkBack will read:
+         "VPN Plus, 1 of 2, in list Upgrade options" -->
+    <string name="upgrade_plan_selection_content_description">升级选项</string>
+    <string name="upsell_card_countries_title">全球覆盖</string>
+    <!-- Parameters:
+        %1$d - number of servers rounded up to 100s (e.g. 600, 1200)
+        %2$s - replaced with "upgrade_plus_countries"
+
+        Example:
+        1700+ server locations in 63 countries -->
+    <string name="upsell_card_countries_description">%2$s 的 %1$d+ 个服务器位置</string>
+    <string name="upsell_card_customization_title">以及更多…</string>
+    <string name="upsell_card_customization_description">解锁更多性能和隐私功能</string>
+    <plurals name="upsell_card_devices_title">
+        <item quantity="one">保护 %1$d 台设备</item>
+        <item quantity="other">保护 %1$d 台设备</item>
+    </plurals>
+    <string name="upsell_card_devices_description">在您的所有设备上实现安全和隐私</string>
+    <string name="upsell_card_netshield_title">NetShield</string>
+    <string name="upsell_card_netshield_description">阻止广告、恶意软件和跟踪器</string>
+    <string name="upsell_card_secure_core_title">安全核心</string>
+    <string name="upsell_card_secure_core_description">为您的 VPN 连接添加另一层加密</string>
+    <string name="upsell_card_p2p_title">P2P 支持</string>
+    <string name="upsell_card_p2p_description">通过 BitTorrent 和其他文件共享协议下载文件</string>
+    <string name="upsell_card_profiles_title">配置文件</string>
+    <string name="upsell_card_profiles_description">创建自定义 VPN 连接</string>
+    <string name="upsell_card_speed_title">更快的浏览速度</string>
+    <!-- Parameters:
+        %1$d - max server speed in Gbps (preserve the non-breaking space between the number and Gbps).
+        Example:
+        Browse at even higher speeds (up to 10&160;Gbps) -->
+    <string name="upsell_card_speed_description">以更快的速度浏览（高达 %1$d Gbps）</string>
+    <string name="upsell_card_split_tunneling_title">分割隧道</string>
+    <string name="upsell_card_split_tunneling_description">同时从两个位置浏览</string>
+    <string name="upsell_card_streaming_title">流媒体</string>
+    <string name="upsell_card_streaming_description">观看您喜爱的电影和电视节目</string>
+    <string name="upsell_card_tor_title">Tor over VPN</string>
+    <string name="upsell_card_tor_description">通过您的 VPN 连接使用 Tor 网络以获得额外的隐私</string>
+    <!-- Format for price per period of time.
+        %1$s - replaced with price and currency (e.g. "$100")
+        %2$s - replaced with time period, one of payment_price_per_ (e.g. "month", "2 years")
+
+        Examples:
+        50 PLN /month
+        $100 /year
+    -->
+    <string name="payment_price_with_period">%1$s /%2$s</string>
+    <string name="payment_price_per_month">月</string>
+    <string name="payment_price_per_year">年</string>
+    <string name="payment_price_per_2years">2 年</string>
+    <string name="payment_price_cycle_month_label">1 个月</string>
+    <string name="payment_price_cycle_year_label">1 年</string>
+    <string name="payment_price_cycle_2years_label">2 年</string>
+    <string name="payment_select_your_plan">选择您的计划</string>
+    <!-- Label on a button for purchasing a subscription.
+         Parameter: %1$s - plan name
+         Plan names are not translated.
+
+         Example: "Get VPN Plus", "Get Proton Unlimited". -->
+    <string name="payment_button_get_plan">获取 %1$s</string>
+    <!-- Parameters: %1$s - replaced with price (e.g. "CHF 100") -->
+    <string name="payment_welcome_price_message_monthly">欢迎优惠。自动续订价格为 %1$s/月</string>
+    <!-- Parameters: %1$s - replaced with price (e.g. "CHF 100") -->
+    <string name="payment_welcome_price_message_annual">欢迎优惠。自动续订价格为 %1$s/年</string>
+    <string name="payment_auto_renew_message_monthly">订阅自动续订价格为 %1$s/月</string>
+    <string name="payment_auto_renew_message_annual">订阅自动续订价格为 %1$s/年</string>
+    <string name="payment_welcome_price_message_monthly_fallback">订阅每月自动续订</string>
+    <string name="payment_welcome_price_message_annual_fallback">订阅每年自动续订</string>
+    <string name="smart_routing_title">智能路由</string>
+    <string name="smart_routing_description">这项技术使 Proton VPN 能够在难以服务的国家/地区提供更高的速度和安全性。</string>
+    <string name="tor_title">Tor</string>
+    <string name="server_load_title">服务器负载</string>
+    <string name="activity_information_learn_more">了解更多</string>
+    <string name="server_load_low">低</string>
+    <string name="server_load_medium">中</string>
+    <string name="server_load_high">高</string>
+    <!-- Override Human verification links from core -->
+    <string name="manual_verification_link" translatable="false">https://protonvpn.com/support-form</string>
+    <string name="verification_help_link" translatable="false">https://protonvpn.com/support/protonvpn-human-verification/</string>
+    <!-- Onboarding -->
+    <string name="onboarding_welcome_title">欢迎使用 Proton VPN</string>
+    <string name="onboarding_welcome_description">私密浏览、访问被阻止的内容并享受数字自由。</string>
+    <string name="onboarding_welcome_action">开始</string>
+    <string name="upgrade_success_get_started_button">开始</string>
+    <string name="dynamic_report_suggestion_didnt_work">没用？</string>
+    <string name="dynamic_report_contact_us">联系我们</string>
+    <string name="dynamic_report_tips_description">这些提示可以帮助您更快地解决问题。</string>
+    <string name="dynamic_report_tips_title">快速修复</string>
+    <string name="dynamic_report_logs_title">发送错误日志</string>
+    <string name="dynamic_report_success_title">感谢您的反馈</string>
+    <string name="dynamic_report_success_description">我们会尽快给您回复。</string>
+    <string name="dynamic_report_field_mandatory">此字段是必填字段</string>
+    <string name="dynamic_report_logs_description">日志是一种文件，它向我们显示导致错误的操作。我们只会使用它们来帮助我们的工程师修复错误。</string>
+    <string name="dynamic_report_logs_missing">错误日志有助于我们查明问题的根源。如果您不包括它们，我们可能无法进行全面调查。</string>
+    <string name="dynamic_report_step1">第 1 步，共 3 步</string>
+    <string name="dynamic_report_step2">第 2 步，共 3 步</string>
+    <string name="dynamic_report_step3">第 3 步，共 3 步</string>
+    <string name="dynamic_report_your_issue_headline">问题是什么？</string>
+    <string name="update_screen_title">更新 Proton VPN</string>
+    <string name="update_screen_description">您更有可能在旧版本的 Proton VPN 上遇到问题。</string>
+    <string name="dialog_create_account_title">创建帐户以继续</string>
+    <string name="dialog_create_account_action_create">创建帐户</string>
+    <string name="dialog_create_account_action_signin">登录</string>
+    <string name="server_search_menu_title">搜索</string>
+    <string name="search_empty_result_subtitle">请尝试使用其他关键字</string>
+    <string name="search_empty_result_title">未找到结果</string>
+    <!-- Content description for an icon button that clears search query in the input field. -->
+    <string name="search_clear_query_content_description">清除</string>
+    <!-- Example: Want to connect to Italy? -->
+    <string name="upgrade_country_title">想连接到特定国家/地区吗？</string>
+    <string name="upgrade_country_message"><![CDATA[使用 VPN Plus 解锁<b>国家/地区选择</b>。]]></string>
+    <string name="free_connections_info_message">Proton 免费版会自动将您连接到可用的最快服务器。这通常是离您位置最近的服务器。</string>
+    <string name="free_connections_info_server_locations">免费服务器位置 (%1$d)</string>
+    <string name="free_connections_info_banner_text">使用 VPN Plus 获得全球覆盖</string>
+    <string name="free_connection_info_title">免费连接</string>
+    <string name="search_upsell_banner_title">从任何地方流式传输</string>
+    <!-- Example: Unlock geoblocked content from 10 countries with VPN Plus. -->
+    <plurals name="search_upsell_banner_message">
+        <item quantity="one">使用 VPN Plus 解锁来自 %1$d 个国家/地区的地理封锁内容</item>
+        <item quantity="other">使用 VPN Plus 解锁来自 %1$d 个国家/地区的地理封锁内容</item>
+    </plurals>
+    <string name="select_default_connection">选择您的默认连接</string>
+    <string name="settings_default_connection_title">默认连接</string>
+    <string name="fastest_country_description">根据您的位置选择的最佳服务器</string>
+    <string name="settings_last_connection_title">上次连接</string>
+    <string name="settings_last_connection_description">您最近使用的连接</string>
+    <string name="settings_change_icon_title">应用图标</string>
+    <string name="settings_change_icon_details">自定义 Proton VPN 应用在您设备上的显示方式。为什么？</string>
+    <string name="settings_change_icon_confirmation_title">更改应用图标？</string>
+    <string name="settings_change_icon_confirmation_details">这将导致 Proton VPN 应用关闭。要重新启动 Proton VPN，只需点击您的新应用图标。</string>
+    <string name="settings_change_icon_header_protonvpn">Proton VPN</string>
+    <string name="settings_change_icon_header_discreet">不显眼的应用图标</string>
+    <string name="settings_widget_title">小部件</string>
+    <string name="settings_widget_selection_title">试用 Proton VPN 小部件</string>
+    <string name="settings_widget_selection_description">从主屏幕查看您的连接状态并访问您喜爱的 VPN 连接。</string>
+    <!-- Placeholder is for non-translatable app_name-->
+    <string name="setting_widget_selection_additional_description">要添加小部件，只需按住主屏幕上的任意位置，然后从“小部件”菜单中选择 %1$s。</string>
+    <string name="settings_widget_selection_button_title">添加小部件</string>
+    <string name="setting_widget_try_title">试用 Proton VPN 小部件</string>
+    <!-- Content description used by accessibility services for a button for dismissing (hiding)
+         a notification banner (usually used for special offers). -->
+    <string name="notification_banner_dismiss_accessibility_label">关闭横幅</string>
+    <!-- Time left in a countdown, it shows two units of time, e.g. days and hours, hours and minutes.
+         %1$s - larger unit of time, one of: time_left_days, time_left_hours, time_left_minutes
+         %2$s - smaller unit of time, one of: time_left_hours, time_left_minutes, time_left_seconds
+
+         Examples:
+         3 days 11 hours left
+         1 hour 32 minutes left
+         0 minutes 50 seconds left
+     -->
+    <string name="offer_time_left">剩余 %1$s %2$s</string>
+    <!-- See offer_time_left, example: 2 minutes 5 seconds left -->
+    <plurals name="time_left_seconds">
+        <item quantity="one">%1$d 秒</item>
+        <item quantity="other">%1$d 秒</item>
+    </plurals>
+    <!-- See offer_time_left, example: 2 minutes 5 seconds left -->
+    <plurals name="time_left_minutes">
+        <item quantity="one">%1$d 分钟</item>
+        <item quantity="other">%1$d 分钟</item>
+    </plurals>
+    <!-- See offer_time_left, example: 2 hours 5 minutes left -->
+    <plurals name="time_left_hours">
+        <item quantity="one">%1$d 小时</item>
+        <item quantity="other">%1$d 小时</item>
+    </plurals>
+    <!-- See offer_time_left, example: 2 days 5 hours left -->
+    <plurals name="time_left_days">
+        <item quantity="one">%1$d 天</item>
+        <item quantity="other">%1$d 天</item>
+    </plurals>
+    <string name="server_change_max_reached">您目前已达到免费服务器更改的最大次数。</string>
+    <string name="server_change_upsell">使用 VPN Plus 获得无限次更改。</string>
+    <string name="server_change_button_title">更改服务器</string>
+    <!-- Added to "Change server" button when it displays countdown until the button becomes active.
+         Used only for accessibility services.
+
+        %1$s - replaced with "time_left_minutes"
+        %2$s - replaced with "time_left_seconds"
+        Example:
+        Available in 1 minute 23 seconds.
+      -->
+    <string name="server_change_button_time_left_content_description">在 %1$s %2$s 内可用</string>
+    <!-- Added to "Change server" button when it displays countdown until the button becomes active.
+         Used only for accessibility services and only if time left is less than 1 minute.
+
+        %1$s - replaced with "time_left_seconds"
+        Example:
+        Available in 23 seconds.
+      -->
+    <string name="server_change_button_time_left_seconds_content_description">在 %1$s 内可用</string>
+    <string name="server_change_progress_finished_contend_description">现在可用</string>
+    <string name="not_wanted_country_title">不是您想要的国家/地区？</string>
+    <string name="not_wanted_country_description">升级以选择任何服务器</string>
+    <string name="whats_new_title">新增功能</string>
+    <string name="whats_new_profiles_title">配置文件回来了</string>
+    <string name="whats_new_profiles_description">创建并保存具有您选择的位置、服务器和协议的自定义连接。</string>
+    <string name="whats_new_widget_title">引入小部件</string>
+    <string name="whats_new_widget_description">您现在可以无需离开主屏幕即可查看和管理您的 VPN。</string>
+    <string name="whats_new_add_widget_button">添加小部件</string>
+    <string name="welcome_plus_title">欢迎使用 VPN Plus</string>
+    <string name="welcome_plus_description">享受额外的隐私功能、超强的性能和更高级别的 VPN 自定义。</string>
+    <string name="welcome_plus_feature_security">高级安全功能</string>
+    <string name="welcome_unlimited_title">欢迎使用 Proton Unlimited</string>
+    <string name="welcome_unlimited_description"><![CDATA[恭喜！您已在所有 Proton 服务上解锁了高级安全和性能功能，外加 <b>%1$d&#160;GB</b> 总存储空间。<br><br>享受 Proton 隐私的最佳体验。]]></string>
+    <string name="welcome_generic_title">恭喜</string>
+    <string name="welcome_generic_description">您已升级您的订阅。享受高级隐私功能和更高级别的性能。</string>
+    <!-- Example: Up to 10 devices at once
+         In practice one will never be a value here -->
+    <plurals name="welcome_plus_feature_devices">
+        <item quantity="one">一次最多 %1$d 台设备</item>
+        <item quantity="other">一次最多 %1$d 台设备</item>
+    </plurals>
+    <!-- Number of secure servers inserted as %1$s in the "welcome_plus_feature_servers_count".
+     The number is rounded to the hundreds, e.g. for a value of 1234 the number used in this text is 1200.
+
+     Example:
+     1200+ new servers
+     -->
+    <plurals name="welcome_plus_servers">
+        <item quantity="one">%d 台新服务器</item>
+        <item quantity="other">%d+ 台新服务器</item>
+    </plurals>
+    <!-- Number of countries inserted as %2$s in "welcome_plus_feature_servers_count".
+
+         Example:
+         55 countries
+         -->
+    <plurals name="welcome_plus_countries">
+        <item quantity="one">%d 个国家/地区</item>
+        <item quantity="other">%d 个国家/地区</item>
+    </plurals>
+    <!-- Parameters:
+     %1$s - replaced with "welcome_plus_servers"
+     %2$s - replaced with "welcome_plus_countries"
+
+     Example:
+     1800+ new servers in 68 countries
+     -->
+    <string name="welcome_plus_feature_servers_count">%2$s 的 %1$s</string>
+    <!-- Text added to button labels that open links in a browser (as opposed to performing actions
+         within the app). Only used by accessibility services like screen readers.
+         Example:
+         a button with "Learn more" label and this suffix will be read by a screen reader as:
+         "Learn more, external link button"
+     -->
+    <string name="accessibility_external_link_suffix">外部链接</string>
+    <string name="no_logs_banner_title">经认证的无日志 VPN</string>
+    <string name="no_logs_banner_description">您的 VPN 活动受瑞士隐私法保护。我们绝不会在线跟踪您或与第三方共享您的信息。</string>
+    <!-- tag(Redesign_2023) Bottom bar label for home screen -->
+    <string name="bottom_nav_home">主页</string>
+    <string name="bottom_nav_gateways">网关</string>
+    <string name="bottom_nav_profiles">配置文件</string>
+    <!-- tag(Redesign_2023) Bottom bar label for country list screen -->
+    <string name="bottom_nav_countries">国家/地区</string>
+    <!-- tag(Redesign_2023) Bottom bar label for settings screen -->
+    <string name="botton_nav_settings">设置</string>
+    <!-- tag(Redesign_2023)
+         Text added to button labels that open a UI element (e.g. a panel).
+         Only used by accessibility services.
+         Example:
+         a button with label "connection details" and this action label will be read by a screen
+         reader as:
+         "Connection details, button. Double tap to open"
+    -->
+    <string name="accessibility_action_open">打开</string>
+    <!-- tag(Redesign_2023)
+         Text added to clickable elements that initiate a VPN connection.
+         Only used by accessibility services.
+         Example:
+         a list item for country Switzerland will be read by a screen reader as:
+         "Switzerland. Double tap to connect"
+        -->
+    <string name="accessibility_action_connect">连接</string>
+    <!-- tag(Redesign_2023)
+         Text added to clickable elements that redirect the user to upgrade their subscription plan.
+         Only used by accessibility services.
+         Example:
+         a list item for country Switzerland that requires upgrading subscription to become
+         available will be read by a screen reader as:
+         "Unavailable, Switzerland. Double tap to upgrade"
+        -->
+    <string name="accessibility_action_upgrade">升级</string>
+    <!-- tag(Redesign_2023)
+     Text added to clickable elements that initiate a search.
+     Only used by accessibility services.
+    -->
+    <string name="accessibility_action_search">搜索</string>
+    <!-- Name of action for opening a screen/panel for an item.
+         The action is listed in a menu of additional actions available to accessibility services.
+
+         Example:
+         - item in a list of countries has a custom action to open list of cities in the country
+         - item in a list of cities has a custom action to open list of servers in the city
+         -->
+    <string name="accessibility_menu_action_open">打开</string>
+    <!-- tag(Redesign_2023)
+         Text added on an item in a list (server or country) when it is unavailable because servers
+         are in maintenance.
+         Only used by accessibility services.
+         Example:
+         a row for country Switzerland where all servers are in maintenance will be read by a
+         screen reader as:
+         "in maintenance, Switzerland"
+     -->
+    <string name="accessibility_item_in_maintenance">维护中</string>
+    <!-- tag(Redesign_2023)
+         Text added on an item in a list (server or country) when it is unavailable.
+         Only used by accessibility services.
+         Example:
+         a row for country Switzerland where all servers are unavailable will be read by a screen
+         reader as:
+         "unavailable, Switzerland"
+     -->
+    <string name="accessibility_item_unavailable">不可用</string>
+    <!-- tag(Redesign_2023)
+         Text added on an item in a list (server or country) when there is active connection to it.
+         Only used by accessibility services.
+         Example:
+         a row for country Switzerland when there is a VPN connection to a server in this country
+         will be read by a screen reader as:
+         "Switzerland, connected"
+     -->
+    <string name="accessibility_item_connected">已连接</string>
+    <!-- tag(Redesign_2023): label indicating that a server supports peer-to-peer. -->
+    <string name="server_feature_label_p2p">P2P</string>
+    <!-- tag(Redesign_2023): label indicating that a server routes connection through the Tor network. -->
+    <string name="server_feature_label_tor">Tor</string>
+    <string name="server_feature_content_description_p2p">点对点</string>
+    <string name="server_feature_content_description_tor">tor</string>
+    <string name="server_feature_content_description_smart_routing">智能路由</string>
+    <!-- tag(Redesign_2023): label used in place of country when the fastest country is connected to. -->
+    <string name="fastest_country">最快的国家/地区</string>
+    <string name="fastest_country_excluding_my_country">最快的国家/地区（不包括我的国家/地区）</string>
+    <!-- tag(Redesign_2023): label used in place of country when the fastest free server is connected to. -->
+    <string name="fastest_free_server">最快的免费服务器</string>
+    <!-- tag(Redesign_2023)
+         Label describing a Secure Core connection via Iceland.
+         Translate entry country name in correct declension, including the preposition and article, if needed.
+         %1$s - exit country name in nominative case
+         Example: United States via Iceland
+     -->
+    <string name="connection_info_secure_core_full_iceland">通过冰岛连接到 %1$s</string>
+    <!-- tag(Redesign_2023)
+         Label describing a Secure Core connection via Sweden.
+         Translate entry country name in correct declension, including the preposition and article, if needed.
+         %1$s - exit country name in nominative case
+         Example: United States via Sweden
+     -->
+    <string name="connection_info_secure_core_full_sweden">通过瑞典连接到 %1$s</string>
+    <!-- tag(Redesign_2023)
+         Label describing a Secure Core connection via Switzerland.
+         Translate entry country name in correct declension, including the preposition and article, if needed.
+         %1$s - exit country name in nominative case
+         Example: United States via Switzerland
+     -->
+    <string name="connection_info_secure_core_full_switzerland">通过瑞士连接到 %1$s</string>
+    <!-- tag(Redesign_2023)
+         Label describing a Secure Core connection.
+         This text will only be used if a new entry country is added and the application is not
+         yet updated with a specific text for it. Few users will ever see it.
+         %1$s - exit country name in nominative case
+         %2$s - entry country name in nominative case
+         Example: United States via Switzerland
+     -->
+    <string name="connection_info_secure_core_full_other">通过 %2$s 连接到 %1$s</string>
+    <!-- tag(Redesign_2023)
+         Label describing a Secure Core connection entry country being Iceland.
+         Translate entry country name in correct declension, including the preposition and article, if needed.
+     -->
+    <string name="connection_info_secure_core_entry_iceland">通过冰岛</string>
+    <!-- tag(Redesign_2023)
+         Label describing a Secure Core connection entry country being Sweden.
+         Translate entry country name in correct declension, including the preposition and article, if needed.
+     -->
+    <string name="connection_info_secure_core_entry_sweden">通过瑞典</string>
+    <!-- tag(Redesign_2023)
+         Label describing a Secure Core connection entry country being Switzerland.
+         Translate entry country name in correct declension, including the preposition and article, if needed.
+     -->
+    <string name="connection_info_secure_core_entry_switzerland">通过瑞士</string>
+    <!--
+         Label describing a Secure Core connection via the fastest Secure Core country.
+         It is displayed below country name, for example:
+         Italy
+         via Secure Core
+    -->
+    <string name="connection_info_secure_core_entry_fastest">通过安全核心</string>
+    <!-- tag(Redesign_2023)
+         Label describing a Secure Core connection entry country.
+         This text will only be used if a new entry country is added and the application is not
+         yet updated with a specific text for it. Few users will ever see it.
+         %1$s - entry country name in nominative case
+         Example: via Switzerland
+    -->
+    <string name="connection_info_secure_core_entry_other">通过 %1$s</string>
+    <!-- tag(Redesign_2023)
+         Label describing a connection to a free server automatically selected from one in
+         three countries. Displayed directly below fastest_free_server.
+         [flags] - replaced with an image of 3 flags.
+
+     -->
+    <string name="connection_info_auto_selected_free_countries">从 [flags] 自动选择</string>
+    <!-- tag(Redesign_2023)
+         Label describing a connection to a free server automatically selected from one in
+         several countries. Used instead of connection_info_auto_selected_free_countries when there
+         are more than 3 countries. Displayed directly below fastest_free_server.
+         [flags] - replaced with an image of 3 flags.
+         $1%d - replaced with number of additional countries (beyond the 3 flags).
+
+         Example, if there are 5 countries to select from the text will be:
+         Auto selected from [flags]+2
+         -->
+    <string name="connection_info_auto_selected_free_countries_more">从 [flags]+%1$d 自动选择</string>
+    <!-- tag(Redesign_2023)
+         Accessibility label describing a connection to a free server that is automatically selected
+         from one in several countries. Placed directly below fastest_free_server.
+         This text replaces connection_info_auto_selected_free_servers for screen readers.
+         $1%d - replaced with number of countries.
+         -->
+    <plurals name="connection_info_accessibility_auto_selected_free_countries">
+        <item quantity="one">从 %1$d 个国家/地区自动选择</item>
+        <item quantity="other">从 %1$d 个国家/地区自动选择</item>
+    </plurals>
+    <string name="connection_info_auto_selected_free_countries_plain">从免费国家/地区自动选择。</string>
+    <!-- tag(Redesign_2023)
+         Label above the connection card indicating that the connection details in the card are
+         are that of the previous connection.
+
+         Example:
+         Last connected to
+         Switzerland, Zurich
+         or
+         Last connected to
+         Fastest country
+         -->
+    <string name="connection_card_label_last_connected">上次连接到</string>
+    <!--
+        Label above the connection card indicating text which acts as a button and leads to
+        customization bottom sheet of default connection
+     -->
+    <string name="connection_card_label_default_connection">默认连接</string>
+    <!-- Label above the connection card when not connected and the user is on the free plan.
+         The connection card always shows "Fastest free server" (fastest_free_server) for free
+         users. -->
+    <string name="connection_card_label_free_connection">免费连接</string>
+    <!-- tag(Redesign_2023)
+         Label above the connection card indicating that a connection is being established.
+     -->
+    <string name="connection_card_label_connecting">正在连接到…</string>
+    <!-- tag(Redesign_2023)
+         Label above the connection card indicating that a connection to a different server is
+         being established. It's shown only in response to user clicking the "Change server" button.
+     -->
+    <string name="connection_card_label_changing_server">正在更改服务器…</string>
+    <!-- tag(Redesign_2023)
+         Label above the connection card indicating that a connection is established and the user
+         is safely browsing as if they were in the location indicated in the connection card.
+
+         Example:
+         Browsing safely from
+         Switzerland, Zurich
+         or
+         Last connected to
+         Fastest country
+         Germany
+     -->
+    <string name="connection_card_label_connected">正在安全地从以下位置浏览</string>
+    <!-- tag(Redesign_2023)
+         Description of a button for opening panel with details of the current VPN connection.
+         Only used by accessibility services.
+
+         Example:
+         a button with this description will be read by a screen reader as:
+         "connection details, button. Double tap to activate"
+    -->
+    <string name="connection_card_accessbility_label_connection_details">连接详情</string>
+    <!-- tag(Redesign_2023)
+         Description of a button for opening panel with information about connections in free plan.
+         Only used by accessibility services.
+
+         Example:
+         a button with this description will be read by a screen reader as:
+         "more information about free connections, button. Double tap to activate"
+    -->
+    <string name="connection_card_accessbility_label_free_connections">有关免费连接的更多信息</string>
+    <!-- tag(Redesign_2023)
+         Displayed above the list of recently made connections.
+     -->
+    <string name="recents_headline">最近</string>
+    <!-- Displayed above the list of VPN Plus features in the home screen -->
+    <string name="home_upsell_carousel_headline">探索 VPN Plus</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="recent_action_pin">固定</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="recent_action_unpin">取消固定</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="recent_action_remove">移除</string>
+    <!-- tag(Redesign_2023)
+         State description of a pinned recent item.
+         Only used by accessibility service.
+    -->
+    <string name="recent_action_accessibility_state_pinned">已固定</string>
+    <!-- tag(Redesign_2023): Displayed in a dialog -->
+    <string name="message_country_servers_in_maintenance">此国家/地区的所有服务器都在维护中</string>
+    <!-- tag(Redesign_2023): Displayed in a dialog -->
+    <string name="message_city_servers_in_maintenance">此城市的所有服务器都在维护中</string>
+    <!-- State means here US state, like California -->
+    <string name="message_state_servers_in_maintenance">此州的所有服务器都在维护中</string>
+    <!-- tag(Redesign_2023): Displayed in a dialog -->
+    <string name="message_server_in_maintenance">服务器维护中</string>
+    <!-- tag(Redesign_2023): Displayed in a dialog -->
+    <string name="message_server_not_available">服务器不可用</string>
+    <!-- tag(Redesign_2023): Displayed in a dialog when all servers of a gateway are in maintenance -->
+    <string name="message_gateway_in_maintenance">网关维护中</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="settings_sign_out">退出登录</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="settings_title">设置</string>
+    <string name="gateways_title">网关</string>
+    <string name="countries_title">国家/地区</string>
+    <string name="profiles_title">配置文件</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="settings_category_features">功能</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="settings_netshield_title">NetShield</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="settings_split_tunneling_title">分割隧道</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="settings_kill_switch_title">终止开关</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="settings_connection_category">连接</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="settings_protocol_title">协议</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="settings_vpn_accelerator_title">VPN 加速器</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="settings_advanced_settings_title">高级设置</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="settings_category_general">常规</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="settings_category_account">帐户</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="settings_notifications_title">通知</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="settings_category_support">支持</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="settings_help_center_title">支持中心</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="settings_report_issue_title">报告问题</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="settings_debug_logs_title">调试日志</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="settings_category_improve_proton">改进 Proton</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="settings_fight_censorship_title">帮助我们对抗审查</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="settings_rate_us_title">评价 Proton VPN</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="settings_app_version">应用版本：%1$s</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="settings_third_party_licenses">第三方许可证</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="dialog_sign_out_title">退出登录？</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="dialog_sign_out_message">您将与 VPN 断开连接。</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="dialog_dont_ask_again">不再询问</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="dialog_sign_out_action">退出登录</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="dialog_action_cancel">取消</string>
+    <string name="dialog_action_change_icon">更改图标</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="country_filter_all">全部</string>
+    <string name="country_filter_cities">城市</string>
+    <string name="country_filter_states">州</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="country_filter_secure_core">安全核心</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="country_filter_p2p">P2P</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="country_filter_tor">Tor</string>
+    <string name="country_filter_all_list_header">所有国家/地区 (%1$d)</string>
+    <string name="country_filter_all_list_header_free">Plus 国家/地区 (%1$d)</string>
+    <string name="country_filter_countries_list_header">国家/地区 (%1$d)</string>
+    <string name="country_filter_cities_list_header">城市 (%1$d)</string>
+    <string name="country_filter_states_list_header">州 (%1$d)</string>
+    <string name="country_filter_servers_list_header">服务器 (%1$d)</string>
+    <string name="country_filter_secure_core_list_header">安全核心国家/地区 (%1$d)</string>
+    <string name="country_filter_p2p_list_header">P2P 国家/地区 (%1$d)</string>
+    <string name="country_filter_p2p_list_header_cities">P2P 城市 (%1$d)</string>
+    <string name="country_filter_p2p_list_header_states">P2P 州 (%1$d)</string>
+    <string name="country_filter_tor_list_header">Tor 国家/地区 (%1$d)</string>
+    <string name="country_filter_tor_servers_list_header">Tor 服务器 (%1$d)</string>
+    <string name="country_filter_info_label">信息</string>
+    <!-- Content description for server load indicator. Used by accessibility services only.
+         Note: the trailing \'%\' sign needs to be doubled
+         (this doesn\'t apply to other percent sign characters, e.g. ٪). -->
+    <string name="country_filter_server_load_content_description">负载：%1$s%%</string>
+    <!-- tag(Redesign_2023)
+         Indicates that VPN is connected and network is protected
+    -->
+    <string name="vpn_status_connected">已保护</string>
+    <!-- tag(Redesign_2023)
+         Indicates that VPN is not connected and network is not protected
+    -->
+    <string name="vpn_status_disabled">您未受保护</string>
+    <!-- tag(Redesign_2023)
+         Text is shown while connection is being established
+    -->
+    <string name="vpn_status_connecting">正在保护您的数字身份</string>
+    <!-- tag(Redesign_2023)
+         Displays Country name and IP of user if he is not connected.
+         First parameter is country, second is IP.
+         Ex: Poland · 192.1.1.1.1
+    -->
+    <string name="vpn_status_disabled_location">%1$s · %2$s</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="connection_details_subtitle">连接详情</string>
+    <string name="connection_details_features_title">功能</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="accessibility_show_ip">显示 IP</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="accessibility_back">返回</string>
+    <string name="accessibility_close">关闭</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="connection_details_my_ip">我的 IP</string>
+    <string name="connection_details_my_ipv4">我的 IPv4</string>
+    <string name="connection_details_my_ipv6">我的 IPv6</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="connection_details_vpn_ip">VPN IP</string>
+    <string name="connection_details_vpn_ip4_6">VPN IPv4/IPv6</string>
+    <string name="connection_details_vpn_ipv4">VPN IPv4</string>
+    <string name="connection_details_vpn_ipv6">VPN IPv6</string>
+    <!-- tag(Redesign_2023)
+         Will be shown in a UI row which indicates for how long user has been connected. Like \'Connected for 2hours\'
+    -->
+    <string name="connection_details_connected_for">已连接</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="connection_details_server">服务器</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="connection_details_gateway">网关</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="connection_details_country">国家/地区</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="connection_details_city">城市</string>
+    <!-- tag(Redesign_2023)
+         Will be shown in a UI row which indicates Server load, on the left side will be Server load, and on the right actual load values.
+    -->
+    <string name="connection_details_server_load">服务器负载</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="connection_details_server_load_question">什么是服务器负载？</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="connection_details_server_load_description">服务器负载显示服务器距离其最大容量有多近。\n\n高服务器负载会减慢您的连接速度。</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="connection_details_server_load_low_title">低 (1–75%)</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="connection_details_server_load_low_description">闪电般的速度</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="connection_details_server_load_medium_title">中 (76–90%)</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="connection_details_server_load_medium_description">不太可能影响 VPN 速度</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="connection_details_server_load_high_title">高 (91–100%)</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="connection_details_server_load_high_description">VPN 可能会比正常速度慢</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="connection_details_protocol">协议</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="connection_details_protocol_description">协议是您的设备用于连接和与服务器通信的一组指令。</string>
+    <!-- tag(Redesign_2023)
+         Label in front of upload speed in connection details. It is followed by upload speed number and unit.
+    -->
+    <string name="connection_details_upload">上传</string>
+    <!-- tag(Redesign_2023)
+         Label in front of download speed in connection details. It is followed by download speed number and unit.
+    -->
+    <string name="connection_details_download">下载</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="connection_details_section_vpn_speed">VPN 速度</string>
+    <string name="connection_details_section_ip">IP 地址</string>
+
+    <!-- tag(Redesign_2023) -->
+    <string name="connection_details_vpn_speed_question">什么是 VPN 速度？</string>
+    <string name="info_dialog_secure_core_title">安全核心</string>
+    <string name="info_dialog_p2p_title">P2P</string>
+    <string name="info_dialog_secure_core_description">安全核心通过第二个最高安全级别的 VPN 服务器将您连接到目标服务器。\n\n这种更高级别的保护可能会导致更高的延迟和更慢的速度。</string>
+    <string name="info_secure_core_standard_header">标准 VPN 连接</string>
+    <string name="info_secure_core_secure_header">安全核心 VPN 连接</string>
+    <string name="info_dialog_tor_description">连接到 Tor 服务器以使用任何浏览器访问隐藏服务和洋葱网站。</string>
+    <string name="info_dialog_button_learn_more_tor">如何访问 Tor 网络</string>
+    <string name="info_dialog_button_learn_more_p2p">如何使用 P2P 进行种子下载</string>
+    <string name="info_dialog_button_learn_more_ipaddress">什么是 IP 地址？</string>
+    <string name="info_dialog_button_learn_more_streaming">需要流媒体帮助吗？</string>
+    <string name="info_dialog_streaming_title">流媒体</string>
+    <string name="info_dialog_streaming_description">流媒体服务器专为快速安全的电视和电影播放而设计。</string>
+    <string name="info_dialog_how_to_stream">如何流式传输：</string>
+    <!-- item 1 in the numbered list -->
+    <string name="info_dialog_how_to_stream_step_1">转到您的手机设置并关闭位置服务</string>
+    <!-- item 2 in the numbered list -->
+    <string name="info_dialog_how_to_stream_step_2">重新启动您的流媒体服务</string>
+    <!-- item 3 in the numbered list (last item) -->
+    <string name="info_dialog_how_to_stream_step_3">连接到任何 Plus 服务器并开始流式传输</string>
+    <string name="info_dialog_profiles_title">配置文件</string>
+    <string name="info_dialog_ipaddress_title">IP 地址</string>
+    <string name="info_dialog_ipv6_traffic_title">IPv6 流量</string>
+    <string name="info_dialog_profiles_description">配置文件是您可以根据需要定制并保存以供快速访问的自定义 VPN 连接。\n\n设置您的首选位置并优化您的设置以实现安全性、性能、游戏或任何其他场景。</string>
+    <string name="info_dialog_ipaddress_description">您的 VPN IP 会掩盖您的真实 IP 地址。这使得您看起来像是在从您的 VPN 位置浏览，因此您的在线活动无法与您的设备相关联。</string>
+    <string name="info_dialog_ipv6_traffic_description">互联网协议 (IP) 为设备分配地址并路由互联网流量。IPv6 是最新版本，提供更多地址和更好的连接性，但尚未普及。</string>
+    <string name="connection_feature_p2p_title">P2P</string>
+    <string name="connection_feature_p2p_description">此服务器上启用了点对点文件共享。</string>
+    <string name="connection_feature_tor_title">Tor</string>
+    <string name="connection_feature_tor_description">您可以使用常规浏览器连接到 .onion 网站。</string>
+    <string name="connection_feature_secure_core_title">安全核心</string>
+    <string name="connection_feature_secure_core_description">您的活动在 2 台高安全性 VPN 服务器后面加密。</string>
+    <string name="connection_feature_streaming_title">流媒体</string>
+    <string name="connection_feature_streaming_description">此服务器已针对电视和电影播放进行了优化。</string>
+    <string name="connection_feature_smart_routing_title">智能路由</string>
+    <string name="connection_feature_smart_routing_description">通过物理位置在其他地方的服务器将您连接到目标国家/地区。</string>
+    <!--
+        %1$s - physical server location country
+        %2$s - destination country
+        Warning: country names are inserted in the nominative case.
+        For INFLECTED languages, translate the following phrase instead:
+        "Your physical server location: %1$s.\nYour browsing country: %2$s"
+    -->
+    <string name="country_smart_routing_info">服务器物理位置在 %1$s，但您将显示为从 %2$s 浏览。</string>
+    <!--
+        Displayed next to an icon which provides more information if clicked
+    -->
+    <string name="connection_details_info_label">信息</string>
+    <!-- tag(Redesign_2023)
+         Used for button title to learn more about different contexts
+    -->
+    <string name="connection_details_learn_more">了解更多</string>
+    <!-- tag(Redesign_2023)
+        Used to describe IP which is not known
+    -->
+    <string name="connection_details_unknown_ip">未知</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="connection_details_vpn_speed_description">此图表显示您当前上传和下载活动的速度。您的 VPN 连接不太可能减慢正常的在线活动。</string>
+    <string name="speed_bytes_per_second">%1$s B/s</string>
+    <string name="speed_kilobytes_per_second">%1$s KB/s</string>
+    <string name="speed_megabytes_per_second">%1$s MB/s</string>
+    <string name="speed_gigabytes_per_second">%1$s GB/s</string>
+    <string name="speed_terabytes_per_second">%1$s TB/s</string>
+    <!-- Used as graph label to indicate speed measurement. Example: Speed KB/s or Speed MB/s-->
+    <string name="speed_graph_title">速度 %1$s</string>
+    <string name="bytes_per_second">B/s</string>
+    <string name="kilobytes_per_second">KB/s</string>
+    <string name="megabytes_per_second">MB/s</string>
+    <string name="gigabytes_per_second">GB/s</string>
+    <string name="terabytes_per_second">TB/s</string>
+    <plurals name="full_name_speed_bytes_per_second">
+        <item quantity="one">%1$s 字节/秒</item>
+        <item quantity="other">%1$s 字节/秒</item>
+    </plurals>
+    <plurals name="full_name_speed_kilobytes_per_second">
+        <item quantity="one">%1$s 千字节/秒</item>
+        <item quantity="other">%1$s 千字节/秒</item>
+    </plurals>
+    <plurals name="full_name_speed_megabytes_per_second">
+        <item quantity="one">%1$s 兆字节/秒</item>
+        <item quantity="other">%1$s 兆字节/秒</item>
+    </plurals>
+    <plurals name="full_name_speed_gigabytes_per_second">
+        <item quantity="one">%1$s 千兆字节/秒</item>
+        <item quantity="other">%1$s 千兆字节/秒</item>
+    </plurals>
+    <plurals name="full_name_speed_terabytes_per_second">
+        <item quantity="one">%1$s 太字节/秒</item>
+        <item quantity="other">%1$s 太字节/秒</item>
+    </plurals>
+    <plurals name="full_name_traffic_volume_bytes">
+        <item quantity="one">%1$s 字节</item>
+        <item quantity="other">%1$s 字节</item>
+    </plurals>
+    <plurals name="full_name_traffic_volume_kilobytes">
+        <item quantity="one">%1$s 千字节</item>
+        <item quantity="other">%1$s 千字节</item>
+    </plurals>
+    <plurals name="full_name_traffic_volume_megabytes">
+        <item quantity="one">%1$s 兆字节</item>
+        <item quantity="other">%1$s 兆字节</item>
+    </plurals>
+    <plurals name="full_name_traffic_volume_gigabytes">
+        <item quantity="one">%1$s 千兆字节</item>
+        <item quantity="other">%1$s 千兆字节</item>
+    </plurals>
+    <plurals name="full_name_traffic_volume_terabytes">
+        <item quantity="one">%1$s 太字节</item>
+        <item quantity="other">%1$s 太字节</item>
+    </plurals>
+    <string name="traffic_volume_bytes">%1$s B</string>
+    <string name="traffic_volume_kilobytes">%1$s KB</string>
+    <string name="traffic_volume_megabytes">%1$s MB</string>
+    <string name="traffic_volume_gigabytes">%1$s GB</string>
+    <string name="traffic_volume_terabytes">%1$s TB</string>
+    <!-- tag(Redesign_2023)
+         Shown at the top status view if app detects that there is no usable network to connect to VPN
+    -->
+    <string name="error_vpn_waiting_for_network">正在等待网络</string>
+    <!-- tag(Redesign_2023) -->
+    <plurals name="connection_details_days">
+        <item quantity="one">%1$d 天</item>
+        <item quantity="other">%1$d 天</item>
+    </plurals>
+    <!-- tag(Redesign_2023) -->
+    <string name="connection_details_hours_shortened">%1$d 小时</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="connection_details_minutes_shortened">%1$d 分钟</string>
+    <!-- tag(Redesign_2023) -->
+    <string name="connection_details_seconds_shortened">%1$d 秒</string>
+    <string name="dialogVpnNotSupportedOnThisDeviceTitle">连接失败</string>
+    <string name="dialogVpnNotSupportedOnThisDeviceDescription">此设备不允许 VPN 连接。</string>
+    <string name="create_profile_title">创建配置文件</string>
+    <!-- Title for the screen where user can edit a profile.
+         %1$s - name of the profile being edited. -->
+    <string name="edit_profile_title">编辑 %1$s</string>
+    <string name="edit_profile_dialog_action">编辑配置文件</string>
+    <string name="create_profile_name_hint">配置文件名称</string>
+    <string name="create_profile_name_error_empty">输入配置文件名称</string>
+    <string name="create_profile_name_error_too_long">配置文件名称必须为 30 个字符或更少</string>
+    <string name="create_profile_type_and_location_title">选择连接类型和位置</string>
+    <string name="create_profile_features_and_settings_title">功能和设置</string>
+    <string name="configure_profile_features_and_settings_title">配置配置文件设置</string>
+    <string name="configure_profile_features_and_settings_description">连接后，配置文件设置将覆盖您的 VPN 设置。</string>
+    <!--
+        First input will be for current step, second one will be for total number of steps
+        Example: Step 3 of 7
+     -->
+    <string name="create_profile_steps">第 %1$d 步，共 %2$d 步</string>
+    <string name="create_profile_button_next">下一步</string>
+    <!-- Important: please note the double % sign after 400. It is displayed as a single % in the app.
+         (this doesn\'t apply to other percent sign characters, e.g. ٪)
+         %1$s - will have translated learn_more value -->
+    <string name="settings_vpn_accelerator_description">使用性能增强技术将您的连接速度提高多达 400%%。%1$s</string>
+    <string name="settings_account_settings_title">帐户设置</string>
+    <string name="settings_account_change_password">更改密码</string>
+    <string name="settings_account_recovery_email">恢复电子邮件</string>
+    <string name="settings_account_recovery_email_not_set">未设置</string>
+    <string name="settings_account_security_keys">安全密钥</string>
+    <!-- Label of a button that opens user\'s account page -->
+    <string name="settings_account_button_my_account">我的帐户</string>
+    <string name="settings_account_button_delete_account">删除帐户</string>
+    <string name="settings_custom_dns_title">自定义 DNS</string>
+    <string name="settings_add_dns_placeholder">192.0.2.0</string>
+    <string name="settings_add_dns_title">添加新的 DNS 服务器</string>
+    <string name="settings_add_dns_new_entry_button">添加</string>
+    <string name="settings_add_dns_description">输入服务器的 IPv4 或 IPv6 地址</string>
+    <string name="settings_add_dns_invalid_input">输入有效的 IPv4 或 IPv6 地址</string>
+    <string name="settings_add_dns_empty_input">输入 IPv4 或 IPv6 地址</string>
+    <string name="settings_add_dns_duplicate_input">服务器已添加</string>
+    <string name="settings_advanced_dns_description">使用自托管或第三方域名系统 (DNS) 连接到 VPN。了解更多</string>
+    <!-- %1$d - Corresponds to number of servers added -->
+    <string name="settings_dns_list_title">服务器 (%1$d)</string>
+    <string name="settings_dns_list_description">如果您的自定义 DNS 服务器不起作用，将使用标准 VPN DNS。</string>
+    <string name="settings_dns_list_description_multiple">我们将按顺序尝试连接到这些服务器。如果它们都不起作用，将使用 VPN DNS。</string>
+    <string name="settings_changes_apply_on_reconnect_toast">更改将在您重新连接时应用</string>
+    <string name="settings_custom_dns_netshield_conflict_dialog_title">NetShield 将不可用</string>
+    <string name="settings_custom_dns_netshield_conflict_dialog_message">使用自定义 DNS 时，NetShield 无法过滤广告、跟踪器和恶意软件。了解更多</string>
+    <string name="settings_advanced_alternative_routing_title">备用路由</string>
+    <string name="settings_advanced_alternative_routing_description">如果由于网络限制而阻止了 Proton 服务，我们将尝试使用备用网络路由将您连接到我们的网站。</string>
+    <string name="settings_advanced_allow_lan_title">局域网连接</string>
+    <string name="settings_advanced_allow_lan_description">允许您连接到设备局域网中的打印机、扬声器和其他设备。</string>
+    <string name="settings_advanced_nat_type_title">NAT 类型</string>
+    <!-- %1$s - will have translated learn_more value -->
+    <string name="settings_advanced_nat_type_description">为您的连接选择网络地址转换类型。%1$s</string>
+    <string name="settings_advanced_nat_type_description_no_learn">为您的连接选择网络地址转换类型。</string>
+    <string name="settings_advanced_nat_type_strict">严格 (类型 3)</string>
+    <string name="settings_advanced_nat_type_strict_short">类型 3</string>
+    <string name="settings_advanced_nat_type_moderate">中等 (类型 2)</string>
+    <string name="settings_advanced_nat_type_moderate_short">类型 2</string>
+    <string name="settings_advanced_nat_type_strict_description">限制进入您网络的数据。此选项更安全，但可能会使点对点游戏连接更加困难。</string>
+    <string name="settings_advanced_nat_type_moderate_description">对进入您网络的数据有一些限制。此选项最适合在线视频游戏。</string>
+    <string name="settings_split_tunneling_description">通过决定哪些应用和 IP 地址受 VPN 保护来自定义您的连接。%1$s</string>
+    <string name="settings_protocol_description">VPN 协议决定数据如何在 VPN 服务器和您的设备之间移动。%1$s</string>
+    <string name="settings_protocol_description_no_link">VPN 协议决定数据如何在 VPN 服务器和您的设备之间移动。</string>
+    <string name="settings_protocol_section_speed">速度 (UDP)</string>
+    <string name="settings_protocol_section_reliability">可靠性 (TCP)</string>
+    <string name="settings_protocol_smart_title">智能</string>
+    <string name="settings_protocol_smart_description">自动为您的连接选择最佳协议。</string>
+    <string name="settings_protocol_wireguard_title">WireGuard</string>
+    <string name="settings_protocol_wireguard_udp_description">最先进的安全和性能协议。</string>
+    <string name="settings_protocol_wireguard_tcp_description">最先进的安全和性能协议。</string>
+    <string name="settings_protocol_openvpn_title">OpenVPN</string>
+    <string name="settings_protocol_openvpn_udp_description">成熟、经过充分测试且安全。OpenVPN 的电池效率不如其他一些协议。</string>
+    <string name="settings_protocol_openvpn_tcp_description">成熟、经过充分测试且安全。OpenVPN 在网络条件差的情况下很可靠，但可能不如其他协议快。</string>
+    <string name="settings_protocol_stealth_title">Stealth</string>
+    <string name="settings_protocol_stealth_description">通过向审查者隐藏您的 VPN 连接来克服 VPN 封锁。此协议具有 DPI（深度包检测）抗性，但可能不如其他协议快。Stealth 是 Proton VPN 独有的。</string>
+    <!-- Text on a badge displayed next to the "smart" protocol name in settings -->
+    <string name="settings_protocol_badge_recommended">推荐</string>
+    <string name="settings_split_tunneling_mode_title">模式</string>
+    <string name="settings_split_tunneling_mode_standard">标准</string>
+    <string name="settings_split_tunneling_mode_inverse">反向</string>
+    <string name="settings_split_tunneling_mode_description_standard">选定的应用和 IP 地址已从 VPN 连接中排除。</string>
+    <string name="settings_split_tunneling_mode_description_inverse">只有选定的应用和 IP 地址通过 VPN 连接，所有其他流量均未受保护。</string>
+    <string name="settings_split_tunneling_excluded_apps">排除的应用</string>
+    <string name="settings_split_tunneling_excluded_ips">排除的 IP 地址</string>
+    <string name="settings_split_tunneling_included_apps">包含的应用</string>
+    <string name="settings_split_tunneling_included_ips">包含的 IP 地址</string>
+    <string name="settings_split_tunneling_empty" comment="Used to indicate that no IP or Apps are included in split tunneling">无</string>
+    <string name="settings_split_tunneling_excluded_format" comment="Used for describing excluded items. Example: Chrome, Facebook and 2 more. The same logic used for IP addresses too.">%1$s、%2$s 和另外 %3$d 个</string>
+    <string name="settings_split_tunneling_already_excluded">已排除</string>
+    <string name="settings_split_tunneling_already_included">已包含</string>
+    <string name="settings_split_tunneling_remove_ip_dialog_message">从列表中移除 IP 地址？</string>
+    <string name="settings_theme_title">主题</string>
+    <string name="settings_theme_value_auto">设备主题</string>
+    <string name="settings_theme_value_light">浅色</string>
+    <string name="settings_theme_value_dark">深色</string>
+    <string name="settings_dialog_reconnect">新设置将在您下次连接时应用。</string>
+    <string name="settings_needs_reconnect_banner">新设置将在您下次连接时应用。</string>
+    <string name="private_dns_conflict_banner_custom_dns_title">自定义 DNS 不可用</string>
+    <string name="private_dns_conflict_banner_custom_dns_description">您的设备正在使用第三方 DNS，这会阻止 Proton VPN 的自定义 DNS 工作。了解更多</string>
+    <string name="private_dns_conflict_banner_netshield_title">NetShield 不可用</string>
+    <string name="private_dns_conflict_banner_netshield_description">您的设备正在使用第三方 DNS，这会阻止 NetShield 工作。了解更多</string>
+    <string name="private_dns_conflict_banner_network_settings_button">网络设置</string>
+    <string name="custom_dns_conflict_banner_netshield_title">NetShield 不可用</string>
+    <string name="custom_dns_conflict_banner_netshield_description">已启用自定义 DNS，这会阻止 NetShield 工作。了解更多</string>
+    <string name="custom_dns_conflict_banner_disable_custom_dns_button">关闭自定义 DNS</string>
+    <string name="info_secure_core_standard_high_privacy">高隐私</string>
+    <string name="info_secure_core_standard_lower_latency">较低延迟</string>
+    <string name="info_secure_core_advanced_privacy">高级隐私</string>
+    <string name="info_secure_core_higher_latency">较高延迟</string>
+    <string name="info_p2p_what_title">什么是 P2P？</string>
+    <string name="info_p2p_what_description">点对点 (P2P) 技术允许您直接与其他设备连接和共享文件。\n\n我们的 P2P 服务器专为支持此类文件共享而设计。</string>
+    <string name="info_p2p_torrenting_title">什么是种子下载？</string>
+    <string name="info_p2p_torrenting_description">通过 P2P 网络快速共享和下载大文件。</string>
+    <string name="info_p2p_why_title">为什么在种子下载时使用 P2P 服务器？</string>
+    <string name="info_p2p_why_description_speed">提高上传和下载速度</string>
+    <string name="info_p2p_why_description_logs">无活动日志</string>
+    <string name="info_p2p_why_description_hide">向您的服务提供商和对等方隐藏您的 IP 地址</string>
+    <string name="info_dialog_smart_routing_description">智能路由使用虚拟服务器在难以到达的国家/地区提供 VPN 覆盖。\n\n当您连接到智能路由服务器时，即使物理服务器位于其他地方，您也会显示为在目标国家/地区浏览。\n\n智能路由通常用于规避反隐私法和其他形式的审查。</string>
+    <string name="countries_upsell_banner_description">使用 VPN Plus 获得全球覆盖</string>
+    <string name="secure_core_upsell_banner_description">为您的 VPN 连接添加另一层加密</string>
+    <string name="p2p_upsell_banner_description">通过 BitTorrent 和其他文件共享协议下载文件</string>
+    <string name="tor_upsell_banner_description">通过您的 VPN 连接使用 Tor 网络以获得额外的隐私</string>
+    <string name="vpnplus_upsell_banner_description">升级到 VPN Plus</string>
+    <string name="search_zero_screen_title">尝试搜索…</string>
+    <string name="search_zero_screen_info_countries_title">国家/地区</string>
+    <string name="search_zero_screen_info_cities_title">城市</string>
+    <string name="search_zero_screen_info_servers_title">服务器</string>
+    <string name="search_zero_screen_info_countries_examples">瑞士、美国、意大利、加拿大…</string>
+    <string name="search_zero_screen_info_cities_examples">纽约、伦敦、东京、悉尼…</string>
+    <string name="search_zero_screen_info_servers_examples">JP#50、CA#3、IT#14…</string>
+    <string name="error_fetching_prices">获取价格时出错。</string>
+    <!-- TV settings -->
+    <string name="tv_settings_split_tunneling_description">通过决定哪些应用受 VPN 保护来自定义您的连接。</string>
+    <string name="tv_settings_split_tunneling_mode_description_standard">选定的应用已从 VPN 连接中排除。</string>
+    <string name="tv_settings_split_tunneling_mode_description_inverse">只有选定的应用通过 VPN 连接，所有其他流量均未受保护。</string>
+    <!-- Temporary strings for auto-login feature -->
+    <string name="auto_login_error_title" translatable="false">设置失败</string>
+    <string name="auto_login_loading_description" translatable="false">正在设置 ProtonVPN…</string>
+    <string name="notification_auto_login_start" translatable="false">@string/auto_login_loading_description</string>
+    <string name="notification_auto_login_success" translatable="false">ProtonVPN 设置成功。</string>
+    <string name="notification_auto_login_error" translatable="false">设置 ProtonVPN 时出现问题。单击以打开应用。</string>
+    <string name="app_restrictions_username_title" translatable="false">用户名</string>
+    <string name="app_restrictions_password_title" translatable="false">密码</string>
+    <string name="profile_action_edit">编辑</string>
+    <string name="profile_action_duplicate">复制</string>
+    <string name="profile_action_delete">删除</string>
+    <!-- Label when showing profile\'s NAT (Network Address Translation) setting. Preferably short. -->
+    <string name="profile_bottom_sheet_nat_title">NAT</string>
+    <!-- Label when showing profile\'s LAN (Local Area Network) setting. Preferably short. -->
+    <string name="profile_bottom_sheet_lan_title">局域网</string>
+    <string name="profile_needs_reconnect">这将重新启动您的连接。</string>
+    <string name="profile_overrides_setting">这些设置已连接到 <b>%1$s</b>，只能在配置文件中管理。</string>
+    <string name="initial_profile_name_streaming_us">流媒体美国</string>
+    <string name="initial_profile_name_work_school">工作/学校</string>
+    <string name="initial_profile_name_anti_censorship">反审查</string>
+    <string name="initial_profile_name_gaming">游戏</string>
+    <string name="initial_profile_name_max_security">最高安全</string>
+    <string name="create_profile_pick_country_title">国家/地区</string>
+    <string name="create_profile_pick_type_title">类型</string>
+    <string name="create_profile_type_standard">标准</string>
+    <string name="create_profile_type_secure_core">安全核心</string>
+    <string name="create_profile_type_p2p">P2P</string>
+    <string name="create_profile_gateway">网关</string>
+    <string name="create_profile_pick_state_title">州</string>
+    <string name="create_profile_pick_city_title">城市</string>
+    <string name="create_profile_pick_server_title">服务器</string>
+    <string name="create_profile_pick_gateway_title">网关</string>
+    <string name="create_profile_pick_netshield_title">NetShield</string>
+    <string name="create_profile_pick_netshield_description">阻止网站和应用上的广告、跟踪器和恶意软件</string>
+    <string name="create_profile_pick_protocol_title">协议</string>
+    <string name="create_profile_pick_nat_title">NAT 类型</string>
+    <!--
+         Example:
+         if a profile named "My Profile" is duplicated, the new suggested name is "My Profile (copy)"
+     -->
+    <string name="create_profile_copy_name">%1$s (副本)</string>
+    <string name="create_profile_fastest_city">最快</string>
+    <string name="create_profile_fastest_state">最快</string>
+    <string name="create_profile_fastest_server">最快</string>
+    <string name="create_profile_pick_middle_country_title">中间国家/地区</string>
+    <string name="profiles_zero_state_title">创建您的第一个配置文件</string>
+    <string name="profiles_zero_state_description">配置文件是您选择的位置、服务器和协议的已保存连接。</string>
+    <string name="profiles_button_create_profile">创建配置文件</string>
+    <string name="profile_deleted_snackbar_message">配置文件已删除</string>
+    <string name="profile_connected_edit_setting">此设置已连接到您的活动配置文件。\n\n编辑您的配置文件以进行更改，或断开连接以编辑您的常规 VPN 设置。</string>
+    <string name="profile_connected_dialog_title">在配置文件中管理 %1$s</string>
+    <string name="undo">撤消</string>
+    <string name="profile_unavailable_dialog_title">配置文件不可用</string>
+    <!-- %1$s - profile name
+         Example: Your server selection for MyProfile is unavailable. Select a different server or try again later -->
+    <string name="profile_unavailable_dialog_message">您为 %1$s 选择的服务器不可用。选择其他服务器或稍后重试。</string>
+    <!-- %1$d - profile icon number
+         Example: Icon 1, Icon 2, ... -->
+    <string name="profile_icon_accessibility">图标 %1$d</string>
+    <!-- %1$d - profile icon number
+         Example: Color 1, Color 2, ... -->
+    <string name="profile_color_accessibility">颜色 %1$d</string>
+    <string name="generic_info_label">信息</string>
+    <!-- Branded name for a feature that opens url after VPN connection to given profile is established.
+         Please don't use & in translation and capitalize key words. -->
+    <string name="create_profile_connect_and_go_label">连接并前往</string>
+    <!-- Displayed as a badge next to create_profile_auto_open_label ("Auto-launch website [NEW]") -->
+    <string name="create_profile_auto_open_label_badge">新</string>
+    <string name="create_profile_auto_open_url_input_label">网站 URL</string>
+    <string name="create_profile_auto_open_url_input_placeholder" translatable="false">https://example.com</string>
+    <!-- Label for disabled "Auto-launch website" setting in profile creation -->
+    <string name="profile_auto_open_off">关闭</string>
+    <!-- Label for enabled "Auto-launch website" setting in profile creation -->
+    <string name="profile_auto_open_on">开启</string>
+    <string name="create_profile_auto_open_description">连接到此配置文件时，自动打开您选择的网站。</string>
+    <string name="profile_auto_open_error_invalid_url">输入有效的 URL</string>
+    <string name="nps_how_likely_question">您向朋友或同事推荐 Proton VPN 的可能性有多大？</string>
+    <string name="nps_additional_comment_title">请告诉我们您给出该评分的原因</string>
+    <string name="nps_additional_comment_optional">可选</string>
+    <string name="nps_rating_low_values_explain">0 表示非常不可能</string>
+    <string name="nps_rating_high_values_explain">10 表示非常可能</string>
+    <string name="nps_toast_submit_message">感谢分享。您的反馈有助于我们改进 Proton VPN。</string>
+    <string name="nps_submit_error_char_limit">您的答案应为 250 个字符或更短</string>
+    <string name="nps_button_submit_title">匿名分享</string>
+    <string name="widget_preview_switzerland">瑞士</string>
+    <string name="widget_preview_spain">西班牙</string>
+    <string name="widget_preview_germany">德国</string>
+    <string name="widget_preview_france">法国</string>
+    <string name="widget_status_unprotected">未受保护</string>
+    <string name="widget_status_error">错误</string>
+    <string name="widget_status_connecting">正在连接</string>
+    <string name="widget_sign_in">登录</string>
+    <string name="widget_toast_added_message">小部件已添加到主屏幕</string>
+    <string name="settings_advanced_ipv6_title">IPv6</string>
+    <string name="settings_advanced_ipv6_description">通过 VPN 隧道传输 IPv6 流量。可以增强与 IPv6 网络的兼容性。</string>
+    <string name="settings_split_tunneling_ipv6_disabled_dialog_message">要使用此地址，您需要允许通过 VPN 隧道进行 IPv6 连接。</string>
+    <string name="setting_ipv6_disabled_dialog_action_enable">启用 IPv6</string>
+    <string name="settings_split_tunneling_ipv6_disabled_dialog_title">IPv6 已禁用</string>
+    <string name="settings_ipv6_enabled_toast">IPv6 已启用</string>
+    <string name="info_dialog_ipv6_traffic_benefits1">确保访问仅限 IPv6 的网站和服务</string>
+    <string name="info_dialog_ipv6_traffic_benefits2">防止依赖 IPv6 的网络出现问题</string>
+    <string name="info_dialog_ipv6_traffic_drawbacks1">可能无法与旧网络或应用很好地配合使用</string>
+    <string name="info_dialog_ipv6_traffic_drawbacks2">某些网络对 IPv6 流量的处理方式不可预测</string>
+    <string name="info_dialog_ipv6_traffic_drawbacks_title">缺点</string>
+    <string name="info_dialog_ipv6_traffic_benefits_title">优点</string>
+    <string name="settings_lan_allow_direct_connection_title">允许直接设备连接</string>
+    <string name="settings_lan_allow_direct_connection_description">连接到智能电视、Android Auto 和其他创建自己网络的设备。为获得最大安全性，仅在连接到这些设备时启用。</string>
+</resources>
